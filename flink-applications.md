@@ -10,7 +10,7 @@ title: 什么是Apache Flink
       <span class="glyphicon glyphicon-chevron-right"></span> &nbsp;
       Flink应用程序 &nbsp;
       <span class="glyphicon glyphicon-chevron-right"></span> &nbsp;
-      <a href="{{ site.baseurl }}/flink-operations.html">Flink操作</a>
+      <a href="{{ site.baseurl }}/flink-operations.html">Flink运维</a>
     </h2>
   </div>
 </div>
@@ -190,7 +190,7 @@ Flink提供了几个用于公共数据处理用例的库。这些库通常嵌入
       <span class="glyphicon glyphicon-chevron-right"></span> &nbsp;
       Flink应用程序 &nbsp;
       <span class="glyphicon glyphicon-chevron-right"></span> &nbsp;
-      <a href="{{ site.baseurl }}/flink-operations.html">Flink操作</a>
+      <a href="{{ site.baseurl }}/flink-operations.html">Flink运维</a>
     </h2>
   </div>
 </div>

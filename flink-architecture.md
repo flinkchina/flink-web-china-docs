@@ -10,7 +10,7 @@ title: 什么是Apache Flink
       <span class="glyphicon glyphicon-chevron-right"></span> &nbsp;
       <a href="{{ site.baseurl }}/flink-applications.html">Flink应用程序</a> &nbsp;
       <span class="glyphicon glyphicon-chevron-right"></span> &nbsp;
-      <a href="{{ site.baseurl }}/flink-operations.html">Flink操作</a>
+      <a href="{{ site.baseurl }}/flink-operations.html">Flink运维</a>
     </h2>
   </div>
 </div>
@@ -93,7 +93,7 @@ Flink被设计成在任何规模上运行有状态流应用程序。应用程序
       <span class="glyphicon glyphicon-chevron-right"></span> &nbsp;
       <a href="{{ site.baseurl }}/flink-applications.html">Flink应用程序</a> &nbsp;
       <span class="glyphicon glyphicon-chevron-right"></span> &nbsp;
-      <a href="{{ site.baseurl }}/flink-operations.html">Flink操作</a>
+      <a href="{{ site.baseurl }}/flink-operations.html">Flink运维</a>
     </h2>
   </div>
 </div>

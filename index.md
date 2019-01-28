@@ -1,12 +1,12 @@
 ---
-title: "Stateful Computations over Data Streams"
+title: "数据流上的有状态计算 Stateful Computations over Data Streams"
 layout: base
 ---
 <div class="row-fluid">
 
   <div class="col-sm-12">
     <p class="lead" markdown="span">
-      **Apache Flink<sup>®</sup> - Stateful Computations over Data Streams**
+      **Apache Flink<sup>®</sup> - 数据流上的有状态计算 Stateful Computations over Data Streams**
     </p>
   </div>
 
@@ -37,45 +37,45 @@ layout: base
   <div class="col-sm-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <span class="glyphicon glyphicon-th"></span> <b>All streaming use cases</b>
+        <span class="glyphicon glyphicon-th"></span> <b>所有流用例</b>
       </div>
       <div class="panel-body">
         <ul style="font-size: small;">
-          <li>Event-driven Applications</li>
-          <li>Stream &amp; Batch Analytics</li>
-          <li>Data Pipelines &amp; ETL</li>
+          <li> 事件驱动程序</li>
+          <li> 流&批处理分析</li>
+          <li> 数据管道&ETL</li>
         </ul>
-        <a href="{{ site.baseurl }}/usecases.html">Learn more</a>
+        <a href="{{ site.baseurl }}/usecases.html">更多学习</a>
       </div>
     </div>
   </div>
   <div class="col-sm-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <span class="glyphicon glyphicon-ok"></span> <b>Guaranteed correctness</b>
+        <span class="glyphicon glyphicon-ok"></span> <b>保证正确性</b>
       </div>
       <div class="panel-body">
         <ul style="font-size: small;">
-          <li>Exactly-once state consistency</li>
-          <li>Event-time processing</li>
-          <li>Sophisticated late data handling</li>
+          <li>Exactly-once state consistency Exactly-one状态一致性</li>
+          <li>Event-time processing 事件时间处理</li>
+          <li>Sophisticated late data handling 复杂的后期数据处理</li>
         </ul>
-        <a href="{{ site.baseurl }}/flink-applications.html#building-blocks-for-streaming-applications">Learn more</a>
+        <a href="{{ site.baseurl }}/flink-applications.html#building-blocks-for-streaming-applications">更多学习</a>
       </div>
     </div>
   </div>
   <div class="col-sm-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <span class="glyphicon glyphicon glyphicon-sort-by-attributes"></span> <b>Layered APIs</b>
+        <span class="glyphicon glyphicon glyphicon-sort-by-attributes"></span> <b>分层的API</b>
       </div>
       <div class="panel-body">
         <ul style="font-size: small;">
-          <li>SQL on Stream &amp; Batch Data</li>
-          <li>DataStream API &amp; DataSet API</li>
-          <li>ProcessFunction (Time &amp; State)</li>
+          <li>SQL on Stream &amp; Batch Data 流上的SQL&批数据</li>
+          <li>DataStream API &amp; DataSet API 数据流API&数据集API</li>
+          <li>ProcessFunction (Time &amp; State) ProcessFunction(时间&状态)</li>
         </ul>
-        <a href="{{ site.baseurl }}/flink-applications.html#layered-apis">Learn more</a>
+        <a href="{{ site.baseurl }}/flink-applications.html#layered-apis">更多学习</a>
       </div>
     </div>
   </div>
@@ -84,45 +84,45 @@ layout: base
   <div class="col-sm-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <span class="glyphicon glyphicon-dashboard"></span> <b>Operational Focus</b>
+        <span class="glyphicon glyphicon-dashboard"></span> <b>操作重点</b>
       </div>
       <div class="panel-body">
         <ul style="font-size: small;">
-          <li>Flexible deployment</li>
-          <li>High-availability setup</li>
-          <li>Savepoints</li>
+          <li>Flexible deployment 灵活的部署</li>
+          <li>High-availability setup 高可用设置</li>
+          <li>Savepoints 保存点</li>
         </ul>
-        <a href="{{ site.baseurl }}/flink-operations.html">Learn more</a>
+        <a href="{{ site.baseurl }}/flink-operations.html">更多学习</a>
       </div>
     </div>
   </div>
   <div class="col-sm-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <span class="glyphicon glyphicon-fullscreen"></span> <b>Scales to any use case</b>
+        <span class="glyphicon glyphicon-fullscreen"></span> <b>扩展到任何用例</b>
       </div>
       <div class="panel-body">
         <ul style="font-size: small;">
-          <li>Scale-out architecture</li>
-          <li>Support for very large state</li>
-          <li>Incremental checkpointing</li>
+          <li>水平扩展架构</li>
+          <li>Support for very large state 支持大量状态</li>
+          <li>Incremental checkpointing 增量检查点</li>
         </ul>
-        <a href="{{ site.baseurl }}/flink-architecture.html#run-applications-at-any-scale">Learn more</a>
+        <a href="{{ site.baseurl }}/flink-architecture.html#run-applications-at-any-scale">更多学习</a>
       </div>
     </div>
   </div>
   <div class="col-sm-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <span class="glyphicon glyphicon-flash"></span> <b>Excellent Performance</b>
+        <span class="glyphicon glyphicon-flash"></span> <b>优秀的性能</b>
       </div>
       <div class="panel-body">
         <ul style="font-size: small;">
-          <li>Low latency</li>
-          <li>High throughput</li>
-          <li>In-Memory computing</li>
+          <li>Low latency 低延迟</li>
+          <li>High throughput 高吞吐</li>
+          <li>In-Memory computing 内存计算</li>
         </ul>
-        <a href="{{ site.baseurl }}/flink-architecture.html#leverage-in-memory-performance">Learn more</a>
+        <a href="{{ site.baseurl }}/flink-architecture.html#leverage-in-memory-performance">更多学习</a>
       </div>
     </div>
   </div>
@@ -133,7 +133,7 @@ layout: base
 <div class="row">
   <div class="col-sm-12">
     <br />
-    <h2><a href="{{ site.baseurl }}/poweredby.html">Powered by Flink</a></h2>
+    <h2><a href="{{ site.baseurl }}/poweredby.html">由Flink提供支持</a></h2>
 
   <div class="jcarousel">
     <ul>
@@ -281,7 +281,7 @@ layout: base
 
 <div class="col-sm-3">
 
-  <h2><a href="{{ site.baseurl }}/blog">Latest Blog Posts</a></h2>
+  <h2><a href="{{ site.baseurl }}/blog">最新的博客文章</a></h2>
 
 </div>
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Apache Flink: Frequently Asked Questions (FAQ)</title>
+    <title>Apache Flink: 常见问题解答</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -137,7 +137,7 @@
       <div class="col-sm-9">
       <div class="row-fluid">
   <div class="col-sm-12">
-    <h1>Frequently Asked Questions (FAQ)</h1>
+    <h1>常见问题解答</h1>
 
 	<!--
 Licensed to the Apache Software Foundation (ASF) under one
@@ -160,19 +160,18 @@ under the License.
 
 <hr />
 
-<p>The following questions are frequently asked with regard to the Flink project <strong>in general</strong>.</p>
-
-<p>If you have further questions, make sure to consult the <a href="https://ci.apache.org/projects/flink/flink-docs-release-1.7">documentation</a> or <a href="/gettinghelp.html">ask the community</a>.</p>
-
+<p>The following questions are frequently asked with regard to the Flink project <strong>in general</strong>. 
+以下是关于Flink项目的<strong>常见</strong>问题。
+If you have further questions, make sure to consult the <a href="https://ci.apache.org/projects/flink/flink-docs-release-1.7">documentation</a> or <a href="/gettinghelp.html">ask the community</a>.
+如果您还有其他问题，请确保参考<a href="https://ci.apache.org/projects/flink/flink-docs-release-1.7">文档</a>或者 <a href="/gettinghelp.html">社区提问</a>.</p>
 <div class="page-toc">
 <ul id="markdown-toc">
-  <li><a href="#general" id="markdown-toc-general">General</a>    <ul>
+  <li><a href="#section" id="markdown-toc-section">常见问题</a>    <ul>
       <li><a href="#is-apache-flink-only-for-near-real-time-processing-use-cases" id="markdown-toc-is-apache-flink-only-for-near-real-time-processing-use-cases">Is Apache Flink only for (near) real-time processing use cases?</a></li>
-      <li><a href="#if-everything-is-a-stream-why-are-there-a-datastream-and-a-dataset-api-in-flink" id="markdown-toc-if-everything-is-a-stream-why-are-there-a-datastream-and-a-dataset-api-in-flink">If everything is a stream, why are there a DataStream and a DataSet API in Flink?</a></li>
-      <li><a href="#how-does-flink-relate-to-the-hadoop-stack" id="markdown-toc-how-does-flink-relate-to-the-hadoop-stack">How does Flink relate to the Hadoop Stack?</a></li>
-      <li><a href="#what-other-stacks-does-flink-run-in" id="markdown-toc-what-other-stacks-does-flink-run-in">What other stacks does Flink run in?</a></li>
-      <li><a href="#what-are-the-prerequisites-to-use-flink" id="markdown-toc-what-are-the-prerequisites-to-use-flink">What are the prerequisites to use Flink?</a></li>
-      <li><a href="#what-scale-does-flink-support" id="markdown-toc-what-scale-does-flink-support">What scale does Flink support?</a></li>
+      <li><a href="#flinkhadoop" id="markdown-toc-flinkhadoop">Flink与Hadoop堆栈有什么关系?</a></li>
+      <li><a href="#flink" id="markdown-toc-flink">Flink还运行哪些堆栈?</a></li>
+      <li><a href="#flink-1" id="markdown-toc-flink-1">使用Flink的先决条件是什么?</a></li>
+      <li><a href="#flink-2" id="markdown-toc-flink-2">Flink支持什么规模?</a></li>
       <li><a href="#is-flink-limited-to-in-memory-data-sets" id="markdown-toc-is-flink-limited-to-in-memory-data-sets">Is Flink limited to in-memory data sets?</a></li>
     </ul>
   </li>
@@ -181,55 +180,60 @@ under the License.
 
 </div>
 
-<h1 id="general">General</h1>
+<h1 id="section">常见问题</h1>
 
 <h2 id="is-apache-flink-only-for-near-real-time-processing-use-cases">Is Apache Flink only for (near) real-time processing use cases?</h2>
-
-<p>Flink is a very general system for data processing and data-driven applications with <em>data streams</em> as
+<p>Apache Flink仅仅用于(近)实时处理用例吗?
+Flink is a very general system for data processing and data-driven applications with <em>data streams</em> as
 the core building block. These data streams can be streams of real-time data, or stored streams of historic data.
+Flink是一个非常通用的系统，用于数据处理和数据驱动应用程序核心组件。这些数据流可以是实时数据流，也可以是存储的历史数据流。
 For example, in Flink’s view a file is a stored stream of bytes. Because of that, Flink
-supports both real-time data processing and applications, as well as batch processing applications.</p>
+supports both real-time data processing and applications, as well as batch processing applications.
+例如，在Flink的视图中，文件是存储的字节流。正因为如此，Flink支持实时数据处理和应用程序，以及批处理应用程序。</p>
 
-<p>Streams can be <em>unbounded</em> (have no end, events continuously keep coming) or be <em>bounded</em> (streams have a beginning
-and an end). For example, a Twitter feed or a stream of events from a message queue are generally unbounded streams,
-whereas a stream of bytes from a file is a bounded stream.</p>
+<p>Streams can be <em>unbounded</em> (have no end, events continuously keep coming) or be <em>bounded</em> (streams have a beginning and an end). For example, a Twitter feed or a stream of events from a message queue are generally unbounded streams, whereas a stream of bytes from a file is a bounded stream.
+流可以是<em>无界的</em>(没有结束，事件不断地到来)，也可以是<em>有界的</em>(流有开始和结束)。例如，来自消息队列的Twitter提要或事件流通常是无界流，而来自文件的字节流是有界流。
+## If everything is a stream, why are there a DataStream and a DataSet API in Flink?
+如果一切都是流，为什么Flink中有DataStream和DataSet API ?
+Bounded streams are often more efficient to process than unbounded streams. Processing unbounded streams of events in (near) real-time requires the system to be able to immediately act on events and to produce intermediate results (often with low latency). Processing bounded streams usually does not require producing low latency results, because the data is a while old anyway (in relative terms). That allows Flink to process the data in a simple and more efficient way.
+有界流通常比无界流处理效率更高。处理(接近)实时的无界事件流要求系统能够立即对事件进行操作并产生中间结果(通常具有较低的延迟)。处理有界流通常不需要产生低延迟的结果，因为数据无论如何都是旧的(相对而言)。这使得Flink能够以一种简单而高效的方式处理数据。</p>
 
-<h2 id="if-everything-is-a-stream-why-are-there-a-datastream-and-a-dataset-api-in-flink">If everything is a stream, why are there a DataStream and a DataSet API in Flink?</h2>
+<p>The <em>DataStream</em> API captures the continuous processing of unbounded and bounded streams, with a model that supports low latency results and flexible reaction to events and time (including event time).
+<em>DataStream</em> API捕获无界和有界流的连续处理，其模型支持低延迟结果和对事件和时间(包括事件时间)的灵活反应。</p>
 
-<p>Bounded streams are often more efficient to process than unbounded streams. Processing unbounded streams of events
-in (near) real-time requires the system to be able to immediately act on events and to produce intermediate
-results (often with low latency). Processing bounded streams usually does not require producing low latency results, because the data is a while old
-anyway (in relative terms). That allows Flink to process the data in a simple and more efficient way.</p>
+<p>The <em>DataSet</em> API has techniques that often speed up the processing of bounded data streams. In the future, the community plans to combine these optimizations with the techniques in the DataStream API.
+数据集API的技术通常可以加快有限数据流的处理。将来，社区计划将这些优化与DataStream API中的技术结合起来。</p>
 
-<p>The <em>DataStream</em> API captures the continuous processing of unbounded and bounded streams, with a model that supports
-low latency results and flexible reaction to events and time (including event time).</p>
-
-<p>The <em>DataSet</em> API has techniques that often speed up the processing of bounded data streams. In the future, the community
-plans to combine these optimizations with the techniques in the DataStream API.</p>
-
-<h2 id="how-does-flink-relate-to-the-hadoop-stack">How does Flink relate to the Hadoop Stack?</h2>
+<h2 id="flinkhadoop">Flink与Hadoop堆栈有什么关系?</h2>
 
 <p>Flink is independent of <a href="https://hadoop.apache.org/">Apache Hadoop</a> and runs without any Hadoop dependencies.</p>
 
-<p>However, Flink integrates very well with many Hadoop components, for example, <em>HDFS</em>, <em>YARN</em>, or <em>HBase</em>.
-When running together with these components, Flink can use HDFS to read data, or write results and checkpoints/snapshots.
-Flink can be easily deployed via YARN and integrates with the YARN and HDFS Kerberos security modules.</p>
+<p>Flink独立于<a href="https://hadoop.apache.org/">Apache Hadoop</a>，运行时不依赖于任何Hadoop。</p>
 
-<h2 id="what-other-stacks-does-flink-run-in">What other stacks does Flink run in?</h2>
+<p>However, Flink integrates very well with many Hadoop components, for example, <em>HDFS</em>, <em>YARN</em>, or <em>HBase</em>.
+然而，Flink与许多Hadoop组件集成得非常好，例如<em>HDFS</em>、<em>YARN</em>或<em>HBase</em>。
+When running together with these components, Flink can use HDFS to read data, or write results and checkpoints/snapshots.
+当与这些组件一起运行时，Flink可以使用HDFS读取数据，或者写入结果和检查点/快照。
+Flink can be easily deployed via YARN and integrates with the YARN and HDFS Kerberos security modules.
+Flink可以通过YARN轻松部署，并与YARN和HDFS Kerberos安全模块集成。</p>
+
+<h2 id="flink">Flink还运行哪些堆栈?</h2>
 
 <p>Users run Flink on <a href="https://kubernetes.io">Kubernetes</a>, <a href="https://mesos.apache.org/">Mesos</a>,
-<a href="https://www.docker.com/">Docker</a>, or even as standalone services.</p>
+<a href="https://www.docker.com/">Docker</a>, or even as standalone services.
+用户在[Kubernetes]上运行Flink (https://kubernetes.io)， <a href="https://mesos.apache.org/">Mesos</a>，
+(https://www.docker.com/)，或甚至作为独立服务。</p>
 
-<h2 id="what-are-the-prerequisites-to-use-flink">What are the prerequisites to use Flink?</h2>
+<h2 id="flink-1">使用Flink的先决条件是什么?</h2>
 
 <ul>
-  <li>You need <em>Java 8</em> to run Flink jobs/applications.</li>
-  <li>The Scala API (optional) depends on Scala 2.11.</li>
-  <li>Highly-available setups with no single point of failure require <a href="https://zookeeper.apache.org/">Apache ZooKeeper</a>.</li>
-  <li>For highly-available stream processing setups that can recover from failures, Flink requires some form of distributed storage for checkpoints (HDFS / S3 / NFS / SAN / GFS / Kosmos / Ceph / …).</li>
+  <li>You need <em>Java 8</em> to run Flink jobs/applications. 您需要<em>Java 8</em>来运行Flink作业/应用程序。</li>
+  <li>The Scala API (optional) depends on Scala 2.11. Scala API(可选)依赖于Scala 2.11</li>
+  <li>Highly-available setups with no single point of failure require <a href="https://zookeeper.apache.org/">Apache ZooKeeper</a>. 高度可用且没有单点故障的设置需要<a href="https://zookeeper.apache.org/">Apache ZooKeeper</a>。</li>
+  <li>For highly-available stream processing setups that can recover from failures, Flink requires some form of distributed storage for checkpoints (HDFS / S3 / NFS / SAN / GFS / Kosmos / Ceph / …). 对于可以从故障中恢复的高可用流处理设置，Flink需要为检查点提供某种形式的分布式存储(HDFS / S3 / NFS / SAN / GFS / Kosmos / Ceph /…)。</li>
 </ul>
 
-<h2 id="what-scale-does-flink-support">What scale does Flink support?</h2>
+<h2 id="flink-2">Flink支持什么规模?</h2>
 
 <p>Users are running Flink jobs both in very small setups (fewer than 5 nodes) and on 1000s of nodes and with TBs of state.</p>
 

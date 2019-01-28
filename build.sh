@@ -63,4 +63,4 @@ while getopts ":p" opt; do
 done
 
 # use 'bundle exec' to insert the local Ruby dependencies
-bundle exec jekyll ${JEKYLL_CMD} --source "${DOCS_SRC}" --destination "${DOCS_DST}" --incremental
+bundle exec jekyll ${JEKYLL_CMD} --source "${DOCS_SRC}" --destination "${DOCS_DST}" 

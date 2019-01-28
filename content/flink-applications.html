@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Apache Flink: What is Apache Flink?</title>
+    <title>Apache Flink: 什么是Apache Flink</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -137,37 +137,42 @@
       <div class="col-sm-9">
       <div class="row-fluid">
   <div class="col-sm-12">
-    <h1>What is Apache Flink?</h1>
+    <h1>什么是Apache Flink</h1>
 
 	<hr />
 
 <div class="row">
   <div class="col-sm-12" style="background-color: #f8f8f8;">
     <h2>
-      <a href="/flink-architecture.html">Architecture</a> &nbsp;
+      <a href="/flink-architecture.html">Flink架构</a> &nbsp;
       <span class="glyphicon glyphicon-chevron-right"></span> &nbsp;
-      Applications &nbsp;
+      Flink应用程序 &nbsp;
       <span class="glyphicon glyphicon-chevron-right"></span> &nbsp;
-      <a href="/flink-operations.html">Operations</a>
+      <a href="/flink-operations.html">Flink操作</a>
     </h2>
   </div>
 </div>
 <hr />
 
-<p>Apache Flink is a framework for stateful computations over unbounded and bounded data streams. Flink provides multiple APIs at different levels of abstraction and offers dedicated libraries for common use cases.</p>
+<p>Apache Flink is a framework for stateful computations over unbounded and bounded data streams. Flink provides multiple APIs at different levels of abstraction and offers dedicated libraries for common use cases.
+Apache Flink是一个用于在无界和有界数据流上进行有状态计算的框架。Flink在不同的抽象级别上提供了多个api，并为通用用例提供了专用的库。</p>
 
-<p>Here, we present Flink’s easy-to-use and expressive APIs and libraries.</p>
+<p>Here, we present Flink’s easy-to-use and expressive APIs and libraries.
+在这里，我们展示了Flink易于使用和表达的API和库。</p>
 
-<h2 id="building-blocks-for-streaming-applications">Building Blocks for Streaming Applications</h2>
+<h2 id="section">流式应用程序的组件</h2>
 
-<p>The types of applications that can be built with and executed by a stream processing framework are defined by how well the framework controls <em>streams</em>, <em>state</em>, and <em>time</em>. In the following, we describe these building blocks for stream processing applications and explain Flink’s approaches to handle them.</p>
+<p>The types of applications that can be built with and executed by a stream processing framework are defined by how well the framework controls <em>streams</em>, <em>state</em>, and <em>time</em>. In the following, we describe these building blocks for stream processing applications and explain Flink’s approaches to handle them.
+由流处理框架构建和执行的应用程序类型由框架如何控制<em>streams流</em>，<em>state状态</em>和<em>time时间</em>来定义。接下来，我们将描述流处理应用程序的这些组件，并解释Flink处理它们的方法。</p>
 
-<h3 id="streams">Streams</h3>
+<h3 id="streams">Streams流</h3>
 
-<p>Obviously, streams are a fundamental aspect of stream processing. However, streams can have different characteristics that affect how a stream can and should be processed. Flink is a versatile processing framework that can handle any kind of stream.</p>
+<p>Obviously, streams are a fundamental aspect of stream processing. However, streams can have different characteristics that affect how a stream can and should be processed. Flink is a versatile processing framework that can handle any kind of stream.
+显然，流是流处理的一个基本方面。然而，流可以具有不同的特性，这些特性会影响流可以并且应该如何处理。Flink是一个通用的处理框架，可以处理任何类型的流。(译者注: 例如汽车分手动挡和自动挡，发动机引擎是一样的)</p>
 
 <ul>
   <li><strong>Bounded</strong> and <strong>unbounded</strong> streams: Streams can be unbounded or bounded, i.e., fixed-sized data sets. Flink has sophisticated features to process unbounded streams, but also dedicated operators to efficiently process bounded streams.</li>
+  <li><strong>有界</strong>和<strong>无界</strong>流:流可以是无界或有界的，即，固定大小的数据集。Flink具有处理无界流的复杂特性，但也具有高效处理有界流的专用操作符。</li>
   <li><strong>Real-time</strong> and <strong>recorded</strong> streams: All data are generated as streams. There are two ways to process the data. Processing it in real-time as it is generated or persisting the stream to a storage system, e.g., a file system or object store, and processed it later. Flink applications can process recorded or real-time streams.</li>
 </ul>
 

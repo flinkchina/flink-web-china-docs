@@ -18,11 +18,10 @@ title: 什么是Apache Flink
 
 Apache Flink是一个框架和分布式处理引擎，用于在*无界和有界的*数据流上进行有状态计算。Flink被设计成在*所有通用集群环境*中运行，以*内存级别速度*和*任意规模*执行计算。
 在这里，我们将解释Flink架构的重要方面。
-<!--
-<div class="row front-graphic">
-  <img src="/img/flink-home-graphic-update3.png" width="800px" />
-</div>
--->
+<!-- <div class="row front-graphic"> -->
+  <!-- <img src="/img/flink-home-graphic-update3.png" width="800px" /> -->
+<!-- </div>  -->
+
 
 ## 处理无界和有界数据
 

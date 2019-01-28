@@ -1,0 +1,15 @@
+current directory: /Users/fqc/Documents/dayone/flink-web-china-docs/.rubydeps/ruby/2.6.0/gems/posix-spawn-0.3.13/ext
+/usr/local/opt/ruby/bin/ruby -I /usr/local/Cellar/ruby/2.6.0_1/lib/ruby/2.6.0 -r ./siteconf20190128-16045-bqc8fu.rb extconf.rb
+creating Makefile
+
+current directory: /Users/fqc/Documents/dayone/flink-web-china-docs/.rubydeps/ruby/2.6.0/gems/posix-spawn-0.3.13/ext
+make "DESTDIR=" clean
+
+current directory: /Users/fqc/Documents/dayone/flink-web-china-docs/.rubydeps/ruby/2.6.0/gems/posix-spawn-0.3.13/ext
+make "DESTDIR="
+compiling posix-spawn.c
+linking shared-object posix_spawn_ext.bundle
+
+current directory: /Users/fqc/Documents/dayone/flink-web-china-docs/.rubydeps/ruby/2.6.0/gems/posix-spawn-0.3.13/ext
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 posix_spawn_ext.bundle ./.gem.20190128-16045-jc71dy

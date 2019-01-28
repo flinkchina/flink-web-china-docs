@@ -1,5 +1,5 @@
 ---
-title: "Powered by Flink"
+title: 由Flink提供支持
 ---
 
 <!-- --------------------------------------------- -->
@@ -9,10 +9,13 @@ title: "Powered by Flink"
 <hr />
 
 Apache Flink powers business-critical applications in many companies and enterprises around the globe. On this page, we present a few notable Flink users that run interesting use cases in production and link to resources that discuss their applications in more detail.
+Apache Flink支持全球许多公司和企业的关键业务应用程序。在这个页面上，我们展示了一些在生产环境中运行有趣用例的Flink用户，并链接到更详细地讨论其应用程序的资源。
 
 More Flink users are listed in the <a href="https://cwiki.apache.org/confluence/display/FLINK/Powered+by+Flink" target='_blank'><small><span class="glyphicon glyphicon-new-window"></span></small> Powered by Flink directory</a> in the project wiki. Please note that the list is *not* comprehensive. We only add users that explicitly ask to be listed.
+更多用户被列在项目Wiki<a href="https://cwiki.apache.org/confluence/display/FLINK/Powered+by+Flink" target='_blank'><small><span class="glyphicon glyphicon-new-window"></span></small>Powered by Flink 目录</a>请注意，这个列表是不全面的。我们只添加明确要求被列出的用户。
 
 If you would you like to be included on this page, please reach out to the [Flink user mailing list]({{ site.baseurl }}/community.html#mailing-lists) and let us know.
+如果您希望被包含在本页面中，请访问[Flink用户邮件列表]({{ site.baseurl }}/community.html#mailing-lists)，并让我们知道。
 
 <div class="row-fluid">
 

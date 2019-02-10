@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Apache Flink: Downloads</title>
+    <title>Apache Flink: 下载</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -137,7 +137,7 @@
       <div class="col-sm-9">
       <div class="row-fluid">
   <div class="col-sm-12">
-    <h1>Downloads</h1>
+    <h1>下载</h1>
 
 	<hr />
 
@@ -155,17 +155,17 @@ $( document ).ready(function() {
 
 <div class="page-toc">
 <ul id="markdown-toc">
-  <li><a href="#latest-stable-release-v171" id="markdown-toc-latest-stable-release-v171">Latest stable release (v1.7.1)</a>    <ul>
-      <li><a href="#binaries" id="markdown-toc-binaries">Binaries</a></li>
-      <li><a href="#source" id="markdown-toc-source">Source</a></li>
-      <li><a href="#optional-components" id="markdown-toc-optional-components">Optional components</a></li>
+  <li><a href="#v171" id="markdown-toc-v171">最新稳定版本 (v1.7.1)</a>    <ul>
+      <li><a href="#section" id="markdown-toc-section">二进制</a></li>
+      <li><a href="#section-1" id="markdown-toc-section-1">源码</a></li>
+      <li><a href="#section-2" id="markdown-toc-section-2">可选组件</a></li>
     </ul>
   </li>
-  <li><a href="#release-notes" id="markdown-toc-release-notes">Release Notes</a></li>
+  <li><a href="#section-3" id="markdown-toc-section-3">发布通知</a></li>
   <li><a href="#verifying-hashes-and-signatures" id="markdown-toc-verifying-hashes-and-signatures">Verifying Hashes and Signatures</a></li>
-  <li><a href="#maven-dependencies" id="markdown-toc-maven-dependencies">Maven Dependencies</a></li>
-  <li><a href="#update-policy-for-old-releases" id="markdown-toc-update-policy-for-old-releases">Update Policy for old releases</a></li>
-  <li><a href="#all-stable-releases" id="markdown-toc-all-stable-releases">All stable releases</a>    <ul>
+  <li><a href="#maven" id="markdown-toc-maven">Maven依赖</a></li>
+  <li><a href="#section-4" id="markdown-toc-section-4">更新旧版本的策略</a></li>
+  <li><a href="#section-5" id="markdown-toc-section-5">所有的稳定版本</a>    <ul>
       <li><a href="#flink" id="markdown-toc-flink">Flink</a></li>
       <li><a href="#flink-shaded" id="markdown-toc-flink-shaded">Flink-shaded</a></li>
     </ul>
@@ -174,19 +174,16 @@ $( document ).ready(function() {
 
 </div>
 
-<h2 id="latest-stable-release-v171">Latest stable release (v1.7.1)</h2>
+<h2 id="v171">最新稳定版本 (v1.7.1)</h2>
 
-<p>Apache Flink® 1.7.1 is our latest stable release.</p>
+<p>Apache Flink® 1.7.1 是我们最新的稳定版本。</p>
 
-<p>An Apache Hadoop installation is <a href="faq.html#how-does-flink-relate-to-the-hadoop-stack">not required</a> to use Apache Flink.
-For users that use Flink without any Hadoop components, we recommend the release without bundled Hadoop libraries.</p>
+<p>ApacheHadoop安装[非必须]（faq.html#how-does-flink-relate-to-the-hadoop-stack）来使用ApacheFlink。
+对于不使用任何Hadoop组件的用户，我们建议不使用捆绑的Hadoop库。</p>
 
-<p>If you plan to use Apache Flink together with Apache Hadoop (run Flink on YARN, connect to HDFS,
-connect to HBase, or use some Hadoop-based file system connector) then select the download that
-bundles the matching Hadoop version, or use the Hadoop free version and
-<a href="https://ci.apache.org/projects/flink/flink-docs-stable/ops/deployment/hadoop.html">export your HADOOP_CLASSPATH</a>.</p>
+<p>如果您计划将Apache Flink与Apache Hadoop一起使用(在YARN上运行Flink，连接到HDFS，连接到HBase，或者使用一些基于Hadoop的文件系统连接器)，那么选择捆绑匹配Hadoop版本的下载，或者使用Hadoop免费版本和<a href="https://ci.apache.org/projects/flink/flink-docs-stable/ops/deployment/hadoop.html">导出HADOOP_CLASSPATH环境变量</a>。</p>
 
-<h3 id="binaries">Binaries</h3>
+<h3 id="section">二进制</h3>
 
 <table class="table table-striped">
 <thead>
@@ -199,7 +196,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
     <tr>
     <th>Apache Flink 1.7.1 only</th>
     
-    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.7.1/flink-1.7.1-bin-scala_2.11.tgz" class="ga-track" id="171-download-hadoopfree_211">Download</a> (<a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-scala_2.11.tgz.sha512">sha512</a>)</td>
+    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.7.1/flink-1.7.1-bin-scala_2.11.tgz" class="ga-track" id="171-download-hadoopfree_211">下载</a> (<a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-scala_2.11.tgz.sha512">sha512</a>)</td>
     
 
     
@@ -210,7 +207,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
     <tr>
     <th>Apache Flink 1.7.1 with Hadoop® 2.8</th>
     
-    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.7.1/flink-1.7.1-bin-hadoop28-scala_2.11.tgz" class="ga-track" id="171-download-hadoop28_211">Download</a> (<a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-hadoop28-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-hadoop28-scala_2.11.tgz.sha512">sha512</a>)</td>
+    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.7.1/flink-1.7.1-bin-hadoop28-scala_2.11.tgz" class="ga-track" id="171-download-hadoop28_211">下载</a> (<a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-hadoop28-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-hadoop28-scala_2.11.tgz.sha512">sha512</a>)</td>
     
 
     
@@ -221,7 +218,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
     <tr>
     <th>Apache Flink 1.7.1 with Hadoop® 2.7</th>
     
-    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.7.1/flink-1.7.1-bin-hadoop27-scala_2.11.tgz" class="ga-track" id="171-download-hadoop27_211">Download</a> (<a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-hadoop27-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-hadoop27-scala_2.11.tgz.sha512">sha512</a>)</td>
+    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.7.1/flink-1.7.1-bin-hadoop27-scala_2.11.tgz" class="ga-track" id="171-download-hadoop27_211">下载</a> (<a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-hadoop27-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-hadoop27-scala_2.11.tgz.sha512">sha512</a>)</td>
     
 
     
@@ -232,7 +229,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
     <tr>
     <th>Apache Flink 1.7.1 with Hadoop® 2.6</th>
     
-    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.7.1/flink-1.7.1-bin-hadoop26-scala_2.11.tgz" class="ga-track" id="171-download-hadoop26_211">Download</a> (<a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-hadoop26-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-hadoop26-scala_2.11.tgz.sha512">sha512</a>)</td>
+    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.7.1/flink-1.7.1-bin-hadoop26-scala_2.11.tgz" class="ga-track" id="171-download-hadoop26_211">下载</a> (<a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-hadoop26-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-hadoop26-scala_2.11.tgz.sha512">sha512</a>)</td>
     
 
     
@@ -243,7 +240,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
     <tr>
     <th>Apache Flink 1.7.1 with Hadoop® 2.4</th>
     
-    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.7.1/flink-1.7.1-bin-hadoop24-scala_2.11.tgz" class="ga-track" id="171-download-hadoop24_211">Download</a> (<a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-hadoop24-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-hadoop24-scala_2.11.tgz.sha512">sha512</a>)</td>
+    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.7.1/flink-1.7.1-bin-hadoop24-scala_2.11.tgz" class="ga-track" id="171-download-hadoop24_211">下载</a> (<a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-hadoop24-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-hadoop24-scala_2.11.tgz.sha512">sha512</a>)</td>
     
 
     
@@ -254,7 +251,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
     <tr>
     <th>Apache Flink 1.6.3 only</th>
     
-    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.6.3/flink-1.6.3-bin-scala_2.11.tgz" class="ga-track" id="163-download-hadoopfree_211">Download</a> (<a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-scala_2.11.tgz.sha512">sha512</a>)</td>
+    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.6.3/flink-1.6.3-bin-scala_2.11.tgz" class="ga-track" id="163-download-hadoopfree_211">下载</a> (<a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-scala_2.11.tgz.sha512">sha512</a>)</td>
     
 
     
@@ -265,7 +262,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
     <tr>
     <th>Flink 1.6.3 with Hadoop® 2.8</th>
     
-    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.6.3/flink-1.6.3-bin-hadoop28-scala_2.11.tgz" class="ga-track" id="163-download-hadoop28_211">Download</a> (<a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-hadoop28-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-hadoop28-scala_2.11.tgz.sha512">sha512</a>)</td>
+    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.6.3/flink-1.6.3-bin-hadoop28-scala_2.11.tgz" class="ga-track" id="163-download-hadoop28_211">下载</a> (<a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-hadoop28-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-hadoop28-scala_2.11.tgz.sha512">sha512</a>)</td>
     
 
     
@@ -276,7 +273,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
     <tr>
     <th>Flink 1.6.3 with Hadoop® 2.7</th>
     
-    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.6.3/flink-1.6.3-bin-hadoop27-scala_2.11.tgz" class="ga-track" id="163-download-hadoop27_211">Download</a> (<a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-hadoop27-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-hadoop27-scala_2.11.tgz.sha512">sha512</a>)</td>
+    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.6.3/flink-1.6.3-bin-hadoop27-scala_2.11.tgz" class="ga-track" id="163-download-hadoop27_211">下载</a> (<a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-hadoop27-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-hadoop27-scala_2.11.tgz.sha512">sha512</a>)</td>
     
 
     
@@ -287,7 +284,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
     <tr>
     <th>Flink 1.6.3 with Hadoop® 2.6</th>
     
-    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.6.3/flink-1.6.3-bin-hadoop26-scala_2.11.tgz" class="ga-track" id="163-download-hadoop26_211">Download</a> (<a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-hadoop26-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-hadoop26-scala_2.11.tgz.sha512">sha512</a>)</td>
+    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.6.3/flink-1.6.3-bin-hadoop26-scala_2.11.tgz" class="ga-track" id="163-download-hadoop26_211">下载</a> (<a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-hadoop26-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-hadoop26-scala_2.11.tgz.sha512">sha512</a>)</td>
     
 
     
@@ -298,7 +295,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
     <tr>
     <th>Flink 1.6.3 with Hadoop® 2.4</th>
     
-    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.6.3/flink-1.6.3-bin-hadoop24-scala_2.11.tgz" class="ga-track" id="163-download-hadoop24_211">Download</a> (<a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-hadoop24-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-hadoop24-scala_2.11.tgz.sha512">sha512</a>)</td>
+    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.6.3/flink-1.6.3-bin-hadoop24-scala_2.11.tgz" class="ga-track" id="163-download-hadoop24_211">下载</a> (<a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-hadoop24-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.6.3/flink-1.6.3-bin-hadoop24-scala_2.11.tgz.sha512">sha512</a>)</td>
     
 
     
@@ -309,7 +306,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
     <tr>
     <th>Apache 1.5.6 Flink only</th>
     
-    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.5.6/flink-1.5.6-bin-scala_2.11.tgz" class="ga-track" id="156-download-hadoopfree_211">Download</a> (<a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-scala_2.11.tgz.sha512">sha512</a>)</td>
+    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.5.6/flink-1.5.6-bin-scala_2.11.tgz" class="ga-track" id="156-download-hadoopfree_211">下载</a> (<a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-scala_2.11.tgz.sha512">sha512</a>)</td>
     
 
     
@@ -320,7 +317,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
     <tr>
     <th>Flink 1.5.6 with Hadoop® 2.8</th>
     
-    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.5.6/flink-1.5.6-bin-hadoop28-scala_2.11.tgz" class="ga-track" id="156-download-hadoop28_211">Download</a> (<a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-hadoop28-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-hadoop28-scala_2.11.tgz.sha512">sha512</a>)</td>
+    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.5.6/flink-1.5.6-bin-hadoop28-scala_2.11.tgz" class="ga-track" id="156-download-hadoop28_211">下载</a> (<a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-hadoop28-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-hadoop28-scala_2.11.tgz.sha512">sha512</a>)</td>
     
 
     
@@ -331,7 +328,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
     <tr>
     <th>Flink 1.5.6 with Hadoop® 2.7</th>
     
-    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.5.6/flink-1.5.6-bin-hadoop27-scala_2.11.tgz" class="ga-track" id="156-download-hadoop27_211">Download</a> (<a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-hadoop27-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-hadoop27-scala_2.11.tgz.sha512">sha512</a>)</td>
+    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.5.6/flink-1.5.6-bin-hadoop27-scala_2.11.tgz" class="ga-track" id="156-download-hadoop27_211">下载</a> (<a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-hadoop27-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-hadoop27-scala_2.11.tgz.sha512">sha512</a>)</td>
     
 
     
@@ -342,7 +339,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
     <tr>
     <th>Flink 1.5.6 with Hadoop® 2.6</th>
     
-    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.5.6/flink-1.5.6-bin-hadoop26-scala_2.11.tgz" class="ga-track" id="156-download-hadoop26_211">Download</a> (<a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-hadoop26-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-hadoop26-scala_2.11.tgz.sha512">sha512</a>)</td>
+    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.5.6/flink-1.5.6-bin-hadoop26-scala_2.11.tgz" class="ga-track" id="156-download-hadoop26_211">下载</a> (<a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-hadoop26-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-hadoop26-scala_2.11.tgz.sha512">sha512</a>)</td>
     
 
     
@@ -353,7 +350,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
     <tr>
     <th>Flink 1.5.6 with Hadoop® 2.4</th>
     
-    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.5.6/flink-1.5.6-bin-hadoop24-scala_2.11.tgz" class="ga-track" id="156-download-hadoop24_211">Download</a> (<a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-hadoop24-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-hadoop24-scala_2.11.tgz.sha512">sha512</a>)</td>
+    <td><a href="https://www.apache.org/dyn/closer.lua/flink/flink-1.5.6/flink-1.5.6-bin-hadoop24-scala_2.11.tgz" class="ga-track" id="156-download-hadoop24_211">下载</a> (<a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-hadoop24-scala_2.11.tgz.asc">asc</a>, <a href="https://www.apache.org/dist/flink/flink-1.5.6/flink-1.5.6-bin-hadoop24-scala_2.11.tgz.sha512">sha512</a>)</td>
     
 
     
@@ -364,8 +361,8 @@ bundles the matching Hadoop version, or use the Hadoop free version and
 </tbody>
 </table>
 
-<h3 id="source">Source</h3>
-<p>Review the source code or build Flink on your own, using one of these packages:</p>
+<h3 id="section-1">源码</h3>
+<p>使用这些包之一，检查源代码或自己构建Flink:</p>
 
 <div class="list-group">
   <!-- Source -->
@@ -403,7 +400,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
    (<a href="https://dist.apache.org/repos/dist/release/flink/flink-shaded-5.0/flink-shaded-5.0-src.tgz.asc">asc</a>, <a href="https://dist.apache.org/repos/dist/release/flink/flink-shaded-5.0/flink-shaded-5.0-src.tgz.sha512">sha512</a>)
 </div>
 
-<h3 id="optional-components">Optional components</h3>
+<h3 id="section-2">可选组件</h3>
 
 <p><button class="collapsible" data-toggle="collapse" data-target="#sql-formats" aria-hidden="true">SQL Formats<span class="glyphicon glyphicon-plus" style="float: right; font-size: 20px;"></span></button></p>
 <div id="sql-formats" class="collapse">
@@ -425,7 +422,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
       <tr>
         
           <td>1.7.1</td>
-          <td><a href="https://repository.apache.org/content/groups/public/org/apache/flink/flink-avro/1.7.1/flink-avro-1.7.1.jar" class="ga-track" id="171-sql-format-avro">Download</a> (<a href="https://repository.apache.org/content/groups/public/org/apache/flink/flink-avro/1.7.1/flink-avro-1.7.1.jar.asc">asc</a>, <a href="https://repository.apache.org/content/groups/public/org/apache/flink/flink-avro/1.7.1/flink-avro-1.7.1.jar.sha1">sha1</a>)</td>
+          <td><a href="https://repository.apache.org/content/groups/public/org/apache/flink/flink-avro/1.7.1/flink-avro-1.7.1.jar" class="ga-track" id="171-sql-format-avro">下载</a> (<a href="https://repository.apache.org/content/groups/public/org/apache/flink/flink-avro/1.7.1/flink-avro-1.7.1.jar.asc">asc</a>, <a href="https://repository.apache.org/content/groups/public/org/apache/flink/flink-avro/1.7.1/flink-avro-1.7.1.jar.sha1">sha1</a>)</td>
         
       </tr>
     
@@ -448,7 +445,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
       <tr>
         
           <td>1.7.1</td>
-          <td><a href="https://repository.apache.org/content/groups/public/org/apache/flink/flink-json/1.7.1/flink-json-1.7.1.jar" class="ga-track" id="171-sql-format-json">Download</a> (<a href="https://repository.apache.org/content/groups/public/org/apache/flink/flink-json/1.7.1/flink-json-1.7.1.jar.asc">asc</a>, <a href="https://repository.apache.org/content/groups/public/org/apache/flink/flink-json/1.7.1/flink-json-1.7.1.jar.sha1">sha1</a>)</td>
+          <td><a href="https://repository.apache.org/content/groups/public/org/apache/flink/flink-json/1.7.1/flink-json-1.7.1.jar" class="ga-track" id="171-sql-format-json">下载</a> (<a href="https://repository.apache.org/content/groups/public/org/apache/flink/flink-json/1.7.1/flink-json-1.7.1.jar.asc">asc</a>, <a href="https://repository.apache.org/content/groups/public/org/apache/flink/flink-json/1.7.1/flink-json-1.7.1.jar.sha1">sha1</a>)</td>
         
       </tr>
     
@@ -458,7 +455,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
 
 </div>
 
-<h2 id="release-notes">Release Notes</h2>
+<h2 id="section-3">发布通知</h2>
 
 <p>Please have a look at the <a href="https://ci.apache.org/projects/flink/flink-docs-release-1.7/release-notes/flink-1.7.html">Release Notes for Flink 1.7</a> if you plan to upgrade your Flink setup from a previous version.</p>
 
@@ -466,12 +463,18 @@ bundles the matching Hadoop version, or use the Hadoop free version and
 
 <p>Along with our releases, we also provide sha512 hashes in <code>*.sha512</code> files and cryptographic signatures in <code>*.asc</code> files. The Apache Software Foundation has an extensive <a href="http://www.apache.org/info/verification.html">tutorial to verify hashes and signatures</a> which you can follow by using any of these release-signing <a href="https://www.apache.org/dist/flink/KEYS">KEYS</a>.</p>
 
-<h2 id="maven-dependencies">Maven Dependencies</h2>
+<h2 id="maven">Maven依赖</h2>
 
-<p>You can add the following dependencies to your <code>pom.xml</code> to include Apache Flink in your project. These dependencies include a local execution environment and thus support local testing.</p>
+<p>You can add the following dependencies to your <code>pom.xml</code> to include Apache Flink in your project. These dependencies include a local execution environment and thus support local testing.
+您可以将以下依赖项添加到项目中的<code>pom</code>文件中来引入Apache Flink。这些依赖项包括本地执行环境，因此支持本地测试。</p>
 
 <ul>
-  <li><strong>Scala API</strong>: To use the Scala API, replace the <code>flink-java</code> artifact id with <code>flink-scala_2.11</code> and <code>flink-streaming-java_2.11</code> with <code>flink-streaming-scala_2.11</code>.</li>
+  <li>
+    <p><strong>Scala API</strong>: To use the Scala API, replace the <code>flink-java</code> artifact id with <code>flink-scala_2.11</code> and <code>flink-streaming-java_2.11</code> with <code>flink-streaming-scala_2.11</code>.</p>
+  </li>
+  <li>
+    <p><strong>Scala API</strong>: 使用Scala API, 将 <code>flink-java</code> 和<code>flink-streaming-java_2.11</code>artifact id替换成<code>flink-scala_2.11</code> 和 <code>flink-streaming-scala_2.11</code>。</p>
+  </li>
 </ul>
 
 <div class="highlight"><pre><code class="language-xml"><span class="nt">&lt;dependency&gt;</span>
@@ -490,13 +493,13 @@ bundles the matching Hadoop version, or use the Hadoop free version and
   <span class="nt">&lt;version&gt;</span>1.7.1<span class="nt">&lt;/version&gt;</span>
 <span class="nt">&lt;/dependency&gt;</span></code></pre></div>
 
-<h2 id="update-policy-for-old-releases">Update Policy for old releases</h2>
+<h2 id="section-4">更新旧版本的策略</h2>
 
-<p>As of March 2017, the Flink community <a href="http://apache-flink-mailing-list-archive.1008284.n3.nabble.com/DISCUSS-Time-based-releases-in-Flink-tp15386p15394.html">decided</a> to support the current and previous minor release with bugfixes. If 1.2.x is the current release, 1.1.y is the previous minor supported release. Both versions will receive bugfixes for critical issues.</p>
+<p>截至2017年3月，Flink社区<a href="http://apache-flink-mailing-list-archive.1008284.n3.nabble.com/DISCUSS-Time-based-releases-in-Flink-tp15386p15394.html">决定</a> 支持当前和以前的小版本，并修复了一些bug。如果1.2.x是当前版本1.1.y是上一个受支持的小版本。两个版本都将收到关键问题的bug修复。</p>
 
-<p>Note that the community is always open to discussing bugfix releases for even older versions. Please get in touch with the developers for that on the dev@flink.apache.org mailing list.</p>
+<p>请注意，社区总是对讨论更旧版本的bug修复版本持开放态度。请通过dev@flink.apache.org邮件列表与开发人员联系。</p>
 
-<h2 id="all-stable-releases">All stable releases</h2>
+<h2 id="section-5">所有的稳定版本</h2>
 
 <p>All Flink releases are available via <a href="https://archive.apache.org/dist/flink/">https://archive.apache.org/dist/flink/</a> including checksums and cryptographic signatures. At the time of writing, this includes the following versions:</p>
 

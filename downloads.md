@@ -1,5 +1,5 @@
 ---
-title: "Downloads"
+title: "下载"
 ---
 
 <hr />
@@ -18,19 +18,18 @@ $( document ).ready(function() {
 
 {% toc %}
 
-## Latest stable release (v{{ site.FLINK_VERSION_STABLE }})
+## 最新稳定版本 (v{{ site.FLINK_VERSION_STABLE }})
 
-Apache Flink® {{ site.FLINK_VERSION_STABLE }} is our latest stable release.
+Apache Flink® {{ site.FLINK_VERSION_STABLE }} 是我们最新的稳定版本。
 
-An Apache Hadoop installation is [not required](faq.html#how-does-flink-relate-to-the-hadoop-stack) to use Apache Flink.
-For users that use Flink without any Hadoop components, we recommend the release without bundled Hadoop libraries.
 
-If you plan to use Apache Flink together with Apache Hadoop (run Flink on YARN, connect to HDFS,
-connect to HBase, or use some Hadoop-based file system connector) then select the download that
-bundles the matching Hadoop version, or use the Hadoop free version and
-[export your HADOOP_CLASSPATH](https://ci.apache.org/projects/flink/flink-docs-stable/ops/deployment/hadoop.html).
+ApacheHadoop安装[非必须]（faq.html#how-does-flink-relate-to-the-hadoop-stack）来使用ApacheFlink。
+对于不使用任何Hadoop组件的用户，我们建议不使用捆绑的Hadoop库。
 
-### Binaries
+
+如果您计划将Apache Flink与Apache Hadoop一起使用(在YARN上运行Flink，连接到HDFS，连接到HBase，或者使用一些基于Hadoop的文件系统连接器)，那么选择捆绑匹配Hadoop版本的下载，或者使用Hadoop免费版本和[导出HADOOP_CLASSPATH环境变量](https://ci.apache.org/projects/flink/flink-docs-stable/ops/deployment/hadoop.html)。
+
+### 二进制
 
 <table class="table table-striped">
 <thead>
@@ -43,7 +42,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
     <tr>
     <th>{{ binary_release.name }}</th>
     {% if binary_release.scala_211 %}
-    <td><a href="{{ binary_release.scala_211.url }}" class="ga-track" id="{{ binary_release.scala_211.id }}">Download</a> (<a href="{{ binary_release.scala_211.asc_url }}">asc</a>, <a href="{{ binary_release.scala_211.sha512_url }}">sha512</a>)</td>
+    <td><a href="{{ binary_release.scala_211.url }}" class="ga-track" id="{{ binary_release.scala_211.id }}">下载</a> (<a href="{{ binary_release.scala_211.asc_url }}">asc</a>, <a href="{{ binary_release.scala_211.sha512_url }}">sha512</a>)</td>
     {% else %}
     <td>Not supported.</td>
     {% endif %}
@@ -58,8 +57,8 @@ bundles the matching Hadoop version, or use the Hadoop free version and
 </tbody>
 </table>
 
-### Source
-<p>Review the source code or build Flink on your own, using one of these packages:</p>
+### 源码
+<p>使用这些包之一，检查源代码或自己构建Flink:</p>
 
 {% for source_release in site.source_releases %}
 <div class="list-group">
@@ -72,7 +71,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
 </div>
 {% endfor %}
 
-### Optional components
+### 可选组件
 
 {% assign categories = site.optional_components | group_by: 'category' | sort: 'name' %}
 {% for category in categories %}
@@ -101,18 +100,18 @@ bundles the matching Hadoop version, or use the Hadoop free version and
         {% if component.scala_dependent %}
           <td>{{ version.version }}</td>
           {% if version.scala_211 %}
-            <td><a href="{{ version.scala_211.url }}" class="ga-track" id="{{ version.scala_211.id }}">Download</a> (<a href="{{ version.scala_211.asc_url }}">asc</a>, <a href="{{ version.scala_211.sha512_url }}">sha1</a>)</td>
+            <td><a href="{{ version.scala_211.url }}" class="ga-track" id="{{ version.scala_211.id }}">下载</a> (<a href="{{ version.scala_211.asc_url }}">asc</a>, <a href="{{ version.scala_211.sha512_url }}">sha1</a>)</td>
           {% else %}
             <td>Not supported.</td>
           {% endif %}
           {% if version.scala_212 %}
-            <td><a href="{{ version.scala_212.url }}" class="ga-track" id="{{ version.scala_212.id }}">Download</a> (<a href="{{ version.scala_212.asc_url }}">asc</a>, <a href="{{ version.scala_212.sha512_url }}">sha1</a>)</td>
+            <td><a href="{{ version.scala_212.url }}" class="ga-track" id="{{ version.scala_212.id }}">下载</a> (<a href="{{ version.scala_212.asc_url }}">asc</a>, <a href="{{ version.scala_212.sha512_url }}">sha1</a>)</td>
           {% else %}
             <td>Not supported.</td>
           {% endif %}
         {% else %}
           <td>{{ version.version }}</td>
-          <td><a href="{{ version.url }}" class="ga-track" id="{{ version.id }}">Download</a> (<a href="{{ version.asc_url }}">asc</a>, <a href="{{ version.sha_url }}">sha1</a>)</td>
+          <td><a href="{{ version.url }}" class="ga-track" id="{{ version.id }}">下载</a> (<a href="{{ version.asc_url }}">asc</a>, <a href="{{ version.sha_url }}">sha1</a>)</td>
         {% endif %}
       </tr>
     {% endfor %}
@@ -123,7 +122,7 @@ bundles the matching Hadoop version, or use the Hadoop free version and
 </div>
 {% endfor %}
 
-## Release Notes
+## 发布通知
 
 Please have a look at the [Release Notes for Flink {{ site.FLINK_VERSION_STABLE_SHORT }}]({{ site.DOCS_BASE_URL }}flink-docs-release-{{ site.FLINK_VERSION_STABLE_SHORT }}/release-notes/flink-{{ site.FLINK_VERSION_STABLE_SHORT }}.html) if you plan to upgrade your Flink setup from a previous version.
 
@@ -131,11 +130,14 @@ Please have a look at the [Release Notes for Flink {{ site.FLINK_VERSION_STABLE_
 
 Along with our releases, we also provide sha512 hashes in `*.sha512` files and cryptographic signatures in `*.asc` files. The Apache Software Foundation has an extensive [tutorial to verify hashes and signatures](http://www.apache.org/info/verification.html) which you can follow by using any of these release-signing [KEYS](https://www.apache.org/dist/flink/KEYS).
 
-## Maven Dependencies
+## Maven依赖
 
 You can add the following dependencies to your `pom.xml` to include Apache Flink in your project. These dependencies include a local execution environment and thus support local testing.
+您可以将以下依赖项添加到项目中的`pom`文件中来引入Apache Flink。这些依赖项包括本地执行环境，因此支持本地测试。
 
 - **Scala API**: To use the Scala API, replace the `flink-java` artifact id with `flink-scala_2.11` and `flink-streaming-java_2.11` with `flink-streaming-scala_2.11`.
+
+- **Scala API**: 使用Scala API, 将 `flink-java` 和`flink-streaming-java_2.11`artifact id替换成`flink-scala_2.11` 和 `flink-streaming-scala_2.11`。
 
 ```xml
 <dependency>
@@ -155,14 +157,13 @@ You can add the following dependencies to your `pom.xml` to include Apache Flink
 </dependency>
 ```
 
-## Update Policy for old releases
+## 更新旧版本的策略
 
-As of March 2017, the Flink community [decided](http://apache-flink-mailing-list-archive.1008284.n3.nabble.com/DISCUSS-Time-based-releases-in-Flink-tp15386p15394.html) to support the current and previous minor release with bugfixes. If 1.2.x is the current release, 1.1.y is the previous minor supported release. Both versions will receive bugfixes for critical issues.
+截至2017年3月，Flink社区[决定](http://apache-flink-mailing-list-archive.1008284.n3.nabble.com/DISCUSS-Time-based-releases-in-Flink-tp15386p15394.html) 支持当前和以前的小版本，并修复了一些bug。如果1.2.x是当前版本1.1.y是上一个受支持的小版本。两个版本都将收到关键问题的bug修复。
 
-Note that the community is always open to discussing bugfix releases for even older versions. Please get in touch with the developers for that on the dev@flink.apache.org mailing list.
+请注意，社区总是对讨论更旧版本的bug修复版本持开放态度。请通过dev@flink.apache.org邮件列表与开发人员联系。
 
-
-## All stable releases
+## 所有的稳定版本
 
 All Flink releases are available via [https://archive.apache.org/dist/flink/](https://archive.apache.org/dist/flink/) including checksums and cryptographic signatures. At the time of writing, this includes the following versions:
 

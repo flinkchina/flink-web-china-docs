@@ -52,11 +52,11 @@ layout: base
   <div class="col-sm-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <span class="glyphicon glyphicon-ok"></span> <b>保证正确性</b>
+        <span class="glyphicon glyphicon-ok"></span> <b>正确性保证</b>
       </div>
       <div class="panel-body">
         <ul style="font-size: small;">
-          <li>Exactly-once state consistency Exactly-one状态一致性</li>
+          <li>Exactly-once state consistency Exactly-one状态一致性保证</li>
           <li>Event-time processing 事件时间处理</li>
           <li>Sophisticated late data handling 复杂的后期数据处理</li>
         </ul>
@@ -71,7 +71,7 @@ layout: base
       </div>
       <div class="panel-body">
         <ul style="font-size: small;">
-          <li>SQL on Stream &amp; Batch Data 流上的SQL&批数据</li>
+          <li>SQL on Stream &amp; Batch Data 统一SQL支持Stream和Batch数据处理</li>
           <li>DataStream API &amp; DataSet API 数据流API&数据集API</li>
           <li>ProcessFunction (Time &amp; State) ProcessFunction(时间&状态)</li>
         </ul>
@@ -84,7 +84,7 @@ layout: base
   <div class="col-sm-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <span class="glyphicon glyphicon-dashboard"></span> <b>操作重点</b>
+        <span class="glyphicon glyphicon-dashboard"></span> <b>运维关注点</b>
       </div>
       <div class="panel-body">
         <ul style="font-size: small;">
@@ -99,13 +99,13 @@ layout: base
   <div class="col-sm-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <span class="glyphicon glyphicon-fullscreen"></span> <b>扩展到任何用例</b>
+        <span class="glyphicon glyphicon-fullscreen"></span> <b>扩展适用于各种场景</b>
       </div>
       <div class="panel-body">
         <ul style="font-size: small;">
-          <li>水平扩展架构</li>
-          <li>Support for very large state 支持大量状态</li>
-          <li>Incremental checkpointing 增量检查点</li>
+          <li>可扩展架构</li>
+          <li>超大state支持</li>
+          <li>增量checkpointing</li>
         </ul>
         <a href="{{ site.baseurl }}/flink-architecture.html#run-applications-at-any-scale">更多学习</a>
       </div>

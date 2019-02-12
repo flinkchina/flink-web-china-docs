@@ -23,7 +23,7 @@ $( document ).ready(function() {
 Apache Flink® {{ site.FLINK_VERSION_STABLE }} 是我们最新的稳定版本。
 
 
-ApacheHadoop安装[非必须]（faq.html#how-does-flink-relate-to-the-hadoop-stack）来使用ApacheFlink。
+ApacheHadoop安装[非必须]（faq.html#how-does-flink-relate-to-the-hadoop-stack）来使用ApacheFlink。  
 对于不使用任何Hadoop组件的用户，我们建议不使用捆绑的Hadoop库。
 
 

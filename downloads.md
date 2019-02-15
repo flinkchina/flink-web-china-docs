@@ -44,13 +44,13 @@ ApacheHadoop安装[非必须]（faq.html#how-does-flink-relate-to-the-hadoop-sta
     {% if binary_release.scala_211 %}
     <td><a href="{{ binary_release.scala_211.url }}" class="ga-track" id="{{ binary_release.scala_211.id }}">下载</a> (<a href="{{ binary_release.scala_211.asc_url }}">asc</a>, <a href="{{ binary_release.scala_211.sha512_url }}">sha512</a>)</td>
     {% else %}
-    <td>Not supported.</td>
+    <td>不支持</td>
     {% endif %}
 
     {% if binary_release.scala_212 %}
-    <td><a href="{{ binary_release.scala_212.url }}" class="ga-track" id="{{ binary_release.scala_212.id }}">Download</a> (<a href="{{ binary_release.scala_212.asc_url }}">asc</a>, <a href="{{ binary_release.scala_212.sha512_url }}">sha512</a>)</td>
+    <td><a href="{{ binary_release.scala_212.url }}" class="ga-track" id="{{ binary_release.scala_212.id }}">下载</a> (<a href="{{ binary_release.scala_212.asc_url }}">asc</a>, <a href="{{ binary_release.scala_212.sha512_url }}">sha512</a>)</td>
     {% else %}
-    <td>Not supported.</td>
+    <td>不支持</td>
     {% endif %}
     </tr>
     {% endfor %}
@@ -107,7 +107,7 @@ ApacheHadoop安装[非必须]（faq.html#how-does-flink-relate-to-the-hadoop-sta
           {% if version.scala_212 %}
             <td><a href="{{ version.scala_212.url }}" class="ga-track" id="{{ version.scala_212.id }}">下载</a> (<a href="{{ version.scala_212.asc_url }}">asc</a>, <a href="{{ version.scala_212.sha512_url }}">sha1</a>)</td>
           {% else %}
-            <td>Not supported.</td>
+            <td>不支持</td>
           {% endif %}
         {% else %}
           <td>{{ version.version }}</td>

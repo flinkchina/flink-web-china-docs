@@ -41,7 +41,7 @@ layout: base
       </div>
       <div class="panel-body">
         <ul style="font-size: small;">
-          <li> 事件驱动程序</li>
+          <li> 事件驱动应用</li>
           <li> 流&批处理分析</li>
           <li> 数据管道&ETL</li>
         </ul>
@@ -56,9 +56,9 @@ layout: base
       </div>
       <div class="panel-body">
         <ul style="font-size: small;">
-          <li>Exactly-once state consistency Exactly-one状态一致性保证</li>
+          <li>Exactly-once state consistency Exactly-once 状态一致性</li>
           <li>Event-time processing 事件时间处理</li>
-          <li>Sophisticated late data handling 复杂的后期数据处理</li>
+          <li>Sophisticated late data handling 成熟的延迟数据处理</li>
         </ul>
         <a href="{{ site.baseurl }}/flink-applications.html#building-blocks-for-streaming-applications">更多学习</a>
       </div>
@@ -67,7 +67,7 @@ layout: base
   <div class="col-sm-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <span class="glyphicon glyphicon glyphicon-sort-by-attributes"></span> <b>分层的API</b>
+        <span class="glyphicon glyphicon glyphicon-sort-by-attributes"></span> <b>分层API</b>
       </div>
       <div class="panel-body">
         <ul style="font-size: small;">
@@ -84,12 +84,12 @@ layout: base
   <div class="col-sm-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <span class="glyphicon glyphicon-dashboard"></span> <b>运维关注点</b>
+        <span class="glyphicon glyphicon-dashboard"></span> <b>聚焦运维</b>
       </div>
       <div class="panel-body">
         <ul style="font-size: small;">
-          <li>Flexible deployment 灵活的部署</li>
-          <li>High-availability setup 高可用设置</li>
+          <li>Flexible deployment 灵活部署</li>
+          <li>High-availability setup 高可用</li>
           <li>Savepoints 保存点</li>
         </ul>
         <a href="{{ site.baseurl }}/flink-operations.html">更多学习</a>
@@ -99,13 +99,13 @@ layout: base
   <div class="col-sm-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <span class="glyphicon glyphicon-fullscreen"></span> <b>扩展适用于各种场景</b>
+        <span class="glyphicon glyphicon-fullscreen"></span> <b>大规模计算</b>
       </div>
       <div class="panel-body">
         <ul style="font-size: small;">
-          <li>可扩展架构</li>
+          <li>水平扩展架构</li>
           <li>超大state支持</li>
-          <li>增量checkpointing</li>
+          <li>增量checkpoint机制</li>
         </ul>
         <a href="{{ site.baseurl }}/flink-architecture.html#run-applications-at-any-scale">更多学习</a>
       </div>
@@ -114,7 +114,7 @@ layout: base
   <div class="col-sm-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <span class="glyphicon glyphicon-flash"></span> <b>优秀的性能</b>
+        <span class="glyphicon glyphicon-flash"></span> <b>性能卓越</b>
       </div>
       <div class="panel-body">
         <ul style="font-size: small;">
@@ -133,7 +133,7 @@ layout: base
 <div class="row">
   <div class="col-sm-12">
     <br />
-    <h2><a href="{{ site.baseurl }}/poweredby.html">由Flink提供支持</a></h2>
+    <h2><a href="{{ site.baseurl }}/poweredby.html">Apache Flink用户</a></h2>
 
   <div class="jcarousel">
     <ul>
@@ -281,7 +281,7 @@ layout: base
 
 <div class="col-sm-3">
 
-  <h2><a href="{{ site.baseurl }}/blog">最新的博客文章</a></h2>
+  <h2><a href="{{ site.baseurl }}/blog">最新博客列表</a></h2>
 
 </div>
 
